@@ -7,6 +7,7 @@ export abstract class Element {
     size: Size;
     position: Position;
 
+
     protected constructor(size: Size, position: Position) {
         this.id = Math.random().toString(36).substr(2, 9);
 

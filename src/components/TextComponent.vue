@@ -6,7 +6,7 @@ const props = defineProps<{
 }>();
 </script>
 <template>
-  <div class="flex items-center justify-center h-full w-full">
+  <div class="flex items-center justify-center h-full w-full" :style="{background: element.background}">
     {{element.content}}
   </div>
 </template>

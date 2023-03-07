@@ -5,6 +5,7 @@ import {ElementTypes} from "@/types";
 export class Text extends Element {
     type = ElementTypes.Text;
     content: string;
+		background: string = '#ff55ff';
 
     constructor(content: string, size: Size, position: Position) {
         super (size, position);

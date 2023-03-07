@@ -24,6 +24,60 @@ npm run test:unit
 ```
 
 
-## Puedes encontrar información sobre el proyecto en info_proyecto.md
+# Tecnologías usadas
+- Vue 3 https://vuejs.org/
+- Typescript https://www.typescriptlang.org/
+- Pinia https://pinia.vuejs.org/
+- Moveable https://daybrush.com/moveable/release/latest/doc/
+- Vitest https://vitest.dev/
 
-## Puedes encontrar información sobre las tareas a realizar en prueba.md
+# Archivos clave
+
+### Store.ts
+
+Se encarga de gestionar el estado global de la aplicación
+
+### useTransformManager.ts
+
+Encargado de gestionar la caja selección, provee eventos con los datos necesarios para aplicar las transformaciones a los elementos seleccionados
+puedes encontrar la api de esta librería en https://daybrush.com/moveable/release/latest/doc/
+
+### Element.ts
+
+Clase abstracta de la que van a extender todos nuestros tipos de elementos
+
+# La Prueba
+
+La clases y atributos incluidos en el proyecto son solo un ejemplo, puedes añadir las que consideres necesarias.
+
+No es necesario cumplimentar todas las fases en orden, en el caso de que te atasques puedes continuar con el siguiente.
+Los tests no son necesarios pero si un plus.
+
+### Fase 1
+ 1. Permitir cambiar el color de fondo del canvas
+ 2. Permitir cambiar el tamaño del canvas
+ 3. Al detectar que un elemento esta fuera del canvas, cambiar el color de fondo del elemento
+
+### Fase 2
+ 1. Añadir al elemento Text la posibilidad de ser rotado
+ 2. Añadir al elemento Text la posibilidad de ser escalado
+ 3. Añadir al elemento Text la posibilidad de cambiar el color de texto
+
+### Fase 4
+ 1. Los elementos pueden ser eliminados a partir de un botón y con la tecla suprimir
+ 2. Los elementos pueden ser copiados a partir de un botón y con la tecla ctrl+c
+ 3. Los elementos pueden ser cortados a partir de un botón y con la tecla ctrl+x
+ 4. Los elementos pueden ser pegados a partir de un botón y con la tecla ctrl+v
+
+### Fase 5
+ 1. Añade un panel donde se muestre todos los colores únicos que hay en el documento (tanto de fondo como de elementos)
+ 2. Añade la posibilidad de modificar uno de estos colores, y esto hará que todos los elementos que compartan ese color se actualicen al nuevo
+
+### Fase 6
+ 1. Añadir la posibilidad de insertar un elemento de tipo de imagen al canvas
+ 2. La imagen debe poder ser drageada, rotada y escalada al igual que los elementos de tipo Text
+
+### Fase 7
+ 1. Añade un panel donde se pueda hacer una búsqueda de imágenes a partir de una palabra clave, para ello puedes consumir el endpoint https://wepik.com/api/images/freepik?query=keyword
+ 2. Añade la posibilidad de insertar una imagen desde el panel de búsqueda
+ 3. Si la api devuelve preview, primero cargar la preview y cuando este lista que sea reemplazada por la imagen de resolucion completa
