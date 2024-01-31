@@ -56,28 +56,24 @@ Los tests no son necesarios pero si un plus.
 ### Fase 1
  1. Permitir cambiar el color de fondo del canvas
  2. Permitir cambiar el tamaño del canvas
- 3. Al detectar que un elemento esta fuera del canvas, cambiar el color de fondo del elemento
 
 ### Fase 2
- 1. Añadir al elemento Text la posibilidad de ser rotado
- 2. Añadir al elemento Text la posibilidad de ser escalado
- 3. Añadir al elemento Text la posibilidad de cambiar el color de texto
+ 1. Añadir al elemento Text la posibilidad de ser escalado
+ 2. Añadir al elemento Text la posibilidad de cambiar el color de texto
 
-### Fase 4
- 1. Los elementos pueden ser eliminados a partir de un botón y con la tecla suprimir
+### Fase 3
+ 1. Los elementos pueden ser eliminados con la tecla suprimir
  2. Los elementos pueden ser copiados a partir de un botón y con la tecla ctrl+c
- 3. Los elementos pueden ser cortados a partir de un botón y con la tecla ctrl+x
+ 3. Los elementos pueden ser cortados con la tecla ctrl+x
  4. Los elementos pueden ser pegados a partir de un botón y con la tecla ctrl+v
 
-### Fase 5
+### Fase 4
  1. Añade un panel donde se muestre todos los colores únicos que hay en el documento (tanto de fondo como de elementos)
- 2. Añade la posibilidad de modificar uno de estos colores, y esto hará que todos los elementos que compartan ese color se actualicen al nuevo
 
-### Fase 6
+### Fase 5
  1. Añadir la posibilidad de insertar un elemento de tipo de imagen al canvas
  2. La imagen debe poder ser drageada, rotada y escalada al igual que los elementos de tipo Text
 
-### Fase 7
+### Fase 6
  1. Añade un panel donde se pueda hacer una búsqueda de imágenes a partir de una palabra clave, para ello puedes consumir el endpoint https://wepik.com/api/images/freepik?query=keyword
  2. Añade la posibilidad de insertar una imagen desde el panel de búsqueda
- 3. Si la api devuelve preview, primero cargar la preview y cuando este lista que sea reemplazada por la imagen de resolucion completa
